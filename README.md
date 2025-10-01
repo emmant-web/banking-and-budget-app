@@ -16,10 +16,25 @@ This was our **first project using React**, and it helped us learn key concepts 
 - React  
 - Material UI  
 - JavaScript  
-- HTML/CSS
+- HTML/CSS  
+
+## 📸 Screenshots  
+
+### 🏦 Banking App (Admin Dashboard)  
+- Send, withdraw, and deposit funds  
+- Manage users (create/delete)  
+- View transaction history  
+
+<img src="./src/assets/images/readme-assets/banking-app-screenshot.png" width="700" />
+
+### 📊 Budget App  
+- Set a budget  
+- Create expenses  
+- Visualize expenses in a pie chart  
+
+<img src="./src/assets/images/readme-assets/budget-app-screenshot.png" width="700" />
 
 ## 👥 Developed By
 
-- emmant-web
+- emmant-web  
 - pgdedios
-
