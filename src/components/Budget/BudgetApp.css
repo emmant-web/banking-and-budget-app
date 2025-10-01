@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&display=swap');
+
+
+h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 1.10rem;;
+    color: #191919;
+    margin: 0 0 1rem 0;
+    padding: 0;
+}
+
+h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 1.10rem;
+    font-weight: 400;
+    margin: 25px auto;
+}
+
+.BudgetApp {
+    display: grid;
+    grid-template-columns: repeat(24 4vw);
+    grid-template-rows: repeat(12 8vh);
+    height: calc(100vh - 80px);
+    gap: 20px;
+    background-color: #ECF1F4;
+    padding: 30px;
+    font-family: "Inter", sans-serif !important;
+}
+
+.budget {
+    display: grid;
+    gap: 10px;
+    background-color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 1rem;
+    grid-area: 1 / 8 / 5 / 16;
+    grid-template-areas: 
+    'input-budget set-budget total-expense'
+    'current-budget current-budget current-budget';
+}
+
+.budget-input {
+    grid-area: input-budget;
+    border: solid #E0E0E0 1px ;
+    border-radius: 1rem;
+    padding: 1rem;
+    align-content: center;
+}
+
+.budget-input > button {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: #2C77BE;
+    font-size: 0.80rem;
+    margin-top: 5px;
+    padding: 10px 15px;
+    border-radius: 3px;
+}
+
+.budget-input > button:hover {
+    background-color: #f6fafd;
+}
+
+.budget-input > p, .set-budget > p, .total-expense > p, .current-budget > p {
+    font-weight: bold;
+    font-size: 1.10rem;
+}
+
+.budget-input> input {
+    border: none;
+    border-bottom: solid #E0E0E0 1px ;
+    font-family: "Inter", sans-serif !important;
+    font-size: 1.10rem;
+    font-weight: 400;
+    width: 150px;
+    min-width: 75px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.budget-input > input:focus {
+    outline: none;
+    border-bottom: solid #2C77BE 1px ;
+    
+}
+
+.set-budget {
+    grid-area: set-budget;
+    border: solid #E0E0E0 1px ;
+    border-radius: 1rem;
+    padding: 1rem;
+    align-content: center;
+}
+
+.total-expense {
+    grid-area: total-expense;
+    border: solid #E0E0E0 1px ;
+    border-radius: 1rem;
+    padding: 1rem;
+    align-content: center;
+}
+.current-budget {
+    grid-area: current-budget;
+    border: solid #E0E0E0 1px ;
+    border-radius: 1rem;
+    padding: 1rem;
+    align-content: center;
+}
+
+.budget-value {
+    font-family: "Inter", sans-serif;
+    font-size: 3rem;
+    margin: 1rem 0;
+    padding: 0; 
+}
+
+.add-expense {
+    background-color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 1rem;
+    grid-area: 1 / 1 / 5 / 8;
+}
+
+.expense-table {
+    background-color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 1rem;
+    grid-area: 5 / 1 / 12 / 16;
+}
+
+.graph {
+    display: grid;
+    background-color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    grid-area: 1 / 16 / 12 / 24;
+    width: 440px;
+}
+
+.graph > div {
+    align-self: start;
+}

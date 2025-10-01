@@ -1,0 +1,56 @@
+[
+    {
+      "id": 1,
+      "name": "Jon Snow",
+      "email": "jon.snow@example.com",
+      "balance": 35000
+    },
+    {
+      "id": 2,
+      "name": "Cersei Lannister",
+      "email": "cersei.lannister@example.com",
+      "balance": 42000
+    },
+    {
+      "id": 3,
+      "name": "Jaime Lannister",
+      "email": "jaime.lannister@example.com",
+      "balance": 45000
+    },
+    {
+      "id": 4,
+      "name": "Arya Stark",
+      "email": "arya.stark@example.com",
+      "balance": 16000
+    },
+    {
+      "id": 5,
+      "name": "Daenerys Targaryen",
+      "email": "daenerys.targaryen@example.com",
+      "balance": 30000
+    },
+    {
+      "id": 6,
+      "name": "Melisandre",
+      "email": "melisandre@example.com",
+      "balance": 150000
+    },
+    {
+      "id": 7,
+      "name": "Ferrara Clifford",
+      "email": "ferrara.clifford@example.com",
+      "balance": 44000
+    },
+    {
+      "id": 8,
+      "name": "Rossini Frances",
+      "email": "rossini.frances@example.com",
+      "balance": 36000
+    },
+    {
+      "id": 9,
+      "name": "Harvey Roxie",
+      "email": "harvey.roxie@example.com",
+      "balance": 65000
+    }
+  ]

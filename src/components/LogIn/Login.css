@@ -1,0 +1,225 @@
+/* import lexend and inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&display=swap');
+
+
+/* 
+
+Color Scheme for Azure Bank & Budget app:
+
+#041E4E (dark blue)
+#2C77BE (medium blue)
+#FFFFFF (white)
+#8C8C8C (medium gray)
+#ECF1F4 (blue gray)
+#F2F2F2 (light gray)
+
+
+*/
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+
+.azure-login-page{
+    /* background-color: #ECF1F4; */
+
+
+/* old gray background */
+/* 
+    background: #C9CCD3;
+    background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+    background-blend-mode: lighten; */
+
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+
+
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-logo{
+    height: 2.1rem;
+    margin-bottom: 3rem;
+}
+
+
+.login-container{
+    background-color: white;
+    width: 492px;
+    height: 533px;
+    border-radius: 1rem;
+
+    margin-inline: auto;
+
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+
+}
+
+.welcome{
+    font-family: 'Inter';
+    font-weight: 800;
+    color: #041E4E;
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: 0.3125rem;
+
+}
+
+
+
+.welcome-p{
+    font-family: 'Lexend';
+    font-weight: 200;
+    color: #8c8c8c;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 0.8125rem;
+}
+
+
+.input-div{
+    display: flex;
+    flex-direction: column;
+    
+    margin-inline: auto;
+    
+}
+
+
+.username{
+    font-family: 'Inter';
+    font-weight: 700;
+    text-align: left;
+    color: #041E4E;
+    padding-left: 0.6rem;
+    margin-bottom: 0.6rem;
+
+   
+
+}
+
+
+
+.username-input{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0.6rem;
+    margin-bottom: 0.8rem;
+
+    font-family: "Inter";
+    font-weight: 200;
+
+    border: 2px solid #f2f2f2;
+
+    /* margin-inline: auto; */
+}
+
+.rememberme-and-password{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6.5rem;
+    margin-bottom: 3rem;
+}
+
+
+.rememberme{
+    display: flex;
+    gap: 0.2rem;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 0.7rem;
+    align-items: center;
+    padding-left: 0.8rem;
+    color: #8c8c8c;
+}
+
+
+
+
+.password a{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 0.7rem;
+ text-decoration: none;
+ color: #2C77BE;
+}
+
+
+.sign-in{
+    width: 300px;
+    height: 45px;
+
+    padding: 12px 20px;
+    margin-inline: auto;
+    border-radius: 10px;
+    border: none;
+    background-color: #2C77BE;
+    color: white;
+    font-family: 'Inter';
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.sign-in:hover{
+    cursor: pointer;
+}
+
+
+.contact-us{
+    width: 300px;
+    height: 45px;
+
+    padding: 12px 20px;
+    margin-inline: auto;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    color: #041E4E;
+    font-family: 'Inter';
+    font-weight: 600;
+    border: 1px solid #8c8c8c;
+
+    margin-bottom: 0.7rem;
+
+}
+
+.contact-us:hover{
+    cursor: pointer;
+}
+
+
+.no-account{
+font-family: 'Lexend';
+font-weight: 300;
+color: #8c8c8c;
+text-align: center;
+font-size: 0.8rem;
+}
+
+.no-account a{
+    font-family: 'Inter';
+    font-weight: 600;
+    text-decoration: none;
+    color: #2C77BE;
+    
+}
+
+

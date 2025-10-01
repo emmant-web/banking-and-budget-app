@@ -1,0 +1,14 @@
+[
+    {
+      "id": 1,
+      "name": "Jon Snow",
+      "email": "jon.snow@example.com",
+      "balance": 35000
+    },
+    {
+      "id": 2,
+      "name": "Cersei Lannister",
+      "email": "cersei.lannister@example.com",
+      "balance": 42000
+    }
+  ]

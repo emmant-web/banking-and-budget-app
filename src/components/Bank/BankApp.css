@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&display=swap");
+
+/* 
+font-family: "Inter", sans-serif;
+font-family: "Lexend", sans-serif;
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.bank-app-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: calc(100vh - 80px);
+  background-color: #ecf1f4;
+  padding: 2rem;
+}
+
+.box {
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.container {
+  display: grid;
+  width: calc(100vw - 4rem);
+  max-width: calc(100vw - 4rem);
+  height: calc(100vh - 160px);
+  min-height: 600px;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  
+  /* Desktop layout */
+  grid-template-columns: 2fr 1fr 4fr;
+  grid-template-rows: 2fr auto 1.5fr;
+  grid-template-areas:
+    "box-1 box-1 box-1"
+    "box-2 box-4 box-4"
+    "box-3 box-4 box-4";
+}
+
+.user-title {
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+.box-1 {
+  grid-area: box-1;
+}
+
+.box-2 {
+  grid-area: box-2;
+}
+
+.box-3 {
+  grid-area: box-3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.box-4 {
+  grid-area: box-4;
+}
+
+.box-4 > h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Your Total Balance Box */
+.balance-p {
+  font-family: "Inter";
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.balance-h4 {
+  font-family: "Inter";
+  font-size: 2rem;
+  font-weight: 800;
+  color: #2c77be;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.balance-time-and-date {
+  font-family: "Lexend";
+  font-size: 0.9375rem;
+  font-weight: 300;
+  color: #8c8c8c;
+  margin-bottom: 1rem;
+}
+
+.balance-buttons {
+  background-color: #ecf1f4;
+  gap: 1rem;
+  width: 80%;
+  margin-inline: auto;
+  height: 40%;
+  border-radius: 0.9375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.withdraw-button button,
+.deposit-button button,
+.send-button button {
+  height: clamp(3rem, 4vw, 4.5rem);
+  width: clamp(3rem, 4vw, 4.5rem);
+  background-color: #ffffff;
+  border: none;
+  border-radius: 0.4375rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.withdraw-button button:hover,
+.deposit-button button:hover,
+.send-button button:hover {
+  transform: scale(1.05);
+}
+
+.withdraw-icon,
+.deposit-icon,
+.send-icon{
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+/* Transaction table */
+.transaction-title {
+  padding-bottom: 0.2rem !important;
+}
+
+/* Laptop/Smaller Desktop Layout (1024px - 1366px) */
+@media screen and (max-width: 1366px) {
+  .bank-app-container {
+    padding: 1.5rem;
+  }
+  
+  .container {
+    width: calc(100vw - 3rem);
+    max-width: calc(100vw - 3rem);
+    height: calc(100vh - 140px);
+    min-height: 550px;
+    gap: 0.875rem;
+  }
+  
+  .balance-h4 {
+    font-size: 1.75rem;
+  }
+  
+  .balance-buttons {
+    gap: clamp(0.5rem, 1.5vw, 1rem);
+  }
+}
+
+/* Standard Laptop Layout (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .bank-app-container {
+    padding: 1rem;
+  }
+  
+  .container {
+    width: calc(100vw - 2rem);
+    max-width: calc(100vw - 2rem);
+    height: calc(100vh - 120px);
+    min-height: 500px;
+    gap: 0.75rem;
+    grid-template-rows: 1.5fr auto 1fr;
+  }
+  
+  .balance-h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    margin-top: 0.75rem;
+  }
+  
+  .balance-p {
+    font-size: 0.9rem;
+  }
+  
+  .balance-time-and-date {
+    font-size: 0.875rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .balance-buttons {
+    width: 85%;
+    height: 45%;
+    gap: clamp(0.25rem, 1vw, 0.75rem);
+  }
+  
+  .box-3 {
+    padding: 0.75rem;
+  }
+  
+  .user-title {
+    margin-bottom: 0.75rem;
+    margin-top: 0.375rem;
+  }
+  
+  .box-4 > h3 {
+    margin-top: 0.375rem;
+    margin-bottom: 0.375rem;
+  }
+}
